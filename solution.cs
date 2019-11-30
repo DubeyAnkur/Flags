@@ -14,7 +14,7 @@ namespace Flags
             int TotalFlags = 0;
             int result = 0;
             int i;
-            for (i = 1; i < A.Length - 1; i++)
+            for (i = 1; i < N - 1; i++)
             {
                 if (A[i] > A[i - 1] && A[i] > A[i + 1])
                 {
@@ -22,7 +22,7 @@ namespace Flags
                     TotalFlags++;
                 }
             }
-            int MaxF = Math.Min(TotalFlags, Convert.ToInt32(Math.Floor(Math.Sqrt(A.Length))));
+            int MaxF = Math.Min(TotalFlags, Convert.ToInt32(Math.Floor(Math.Sqrt(N))));
 
             if (MaxF <= 1)
                 return MaxF;
