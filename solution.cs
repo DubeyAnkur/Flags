@@ -60,7 +60,6 @@ namespace Flags
                     next[i] = i;
                 else
                     next[i] = next[i + 1];
-
             }
             return next;
         }
